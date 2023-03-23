@@ -1,5 +1,5 @@
 # SmartContractAttackPoC
-PoC of Smart Contract Attacking Incidents  
+PoCs of Smart Contracts Attacking Incidents  
 
 
 ASKACR attacking analysis (Mar-21-2023 01:39:47 PM +UTC):  
