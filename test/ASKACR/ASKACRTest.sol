@@ -58,7 +58,7 @@ contract ASKACRTest is Test {
         assertEq(balance, 1711299605121882680806);
         assertEq(askacr.balanceOf(address(hacker)), 8728411131443188467);
 
-        //impersonate the hacker
+        //impersonate the hacker to simulate the hacking steps
         vm.startPrank(address(hacker));
         askacr.transfer(address(hacker), 0);
         //create a new contract
