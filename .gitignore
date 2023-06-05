@@ -1,0 +1,6 @@
+lib/
+script/
+/cache/
+/out/
+/.vscode/
+.DS_Store

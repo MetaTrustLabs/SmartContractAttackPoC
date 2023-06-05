@@ -4,8 +4,9 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../../src/TornadoCash/Factory.sol";
 
-//twitter alert: https://twitter.com/MetaTrustAlert/status/1660116431898550273?s=20
+//twitter: https://twitter.com/MetaTrustAlert/status/1660116431898550273
 //The PoC of the core step of redeploy of the malicious proposal in the Tornado Cash Attack
+//EIP-4758: Deactivate SELFDESTRUCT: This EIP renames the SELFDESTRUCT opcode to SENDALL, and replaces its functionality. The new functionality will be only to send all Ether in the account to the caller.
 contract RedeployContractTest is Test {
 
     Factory factory_a;

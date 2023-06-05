@@ -8,3 +8,8 @@ ASKACR attacking analysis (Mar-21-2023 01:39:47 PM +UTC):
 
 Tornado Cash attacking (May-20-2023 07:25:11 AM +UTC)
 - https://twitter.com/MetaTrustAlert/status/1660116431898550273 
+
+
+BabyDogeCoin attacking (May-20-2023 07:25:11 AM +UTC)
+- https://twitter.com/MetaTrustAlert/status/1662835458722910209   
+- https://medium.com/@MetatrustL/cracking-the-code-delving-into-the-elaborate-scheme-behind-babydoge-coins-flash-loan-attack-9c94f59041ff
