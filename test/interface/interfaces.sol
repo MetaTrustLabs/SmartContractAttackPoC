@@ -130,3 +130,12 @@ interface DeflationaryToken {
   function isExcludedFromFee(address account) external view returns (bool);
   function numTokensSellToAddToLiquidity() external view returns (uint256);
 }
+
+interface IDPPOracle {
+    function flashLoan(
+        uint256 baseAmount,
+        uint256 quoteAmount,
+        address _assetTo,
+        bytes calldata data
+    ) external;
+}

@@ -25,7 +25,7 @@ interface IFarmZAP {
 
 // @Analysis
 // Post-mortem : https://medium.com/@MetatrustL/cracking-the-code-delving-into-the-elaborate-scheme-behind-babydoge-coins-flash-loan-attack-9c94f59041ff
-// Twitter Guy : https://twitter.com/MetaTrustAlert/status/1662835458722910209
+// Twitter : https://twitter.com/MetaTrustAlert/status/1662835458722910209
 
 contract BabyDogeCoinTest is Test {
     DeflationaryToken BabyDoge = DeflationaryToken(0xc748673057861a797275CD8A068AbB95A902e8de);
